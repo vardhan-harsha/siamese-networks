@@ -1,0 +1,27 @@
+dataset:
+  name: att           # att | lfw
+  data_dir: data/att_faces
+  image_size: [105, 105]
+  train_split: 0.7
+  val_split: 0.15
+  test_split: 0.15
+
+model:
+  embedding_dim: 128
+
+training:
+  loss: contrastive   # contrastive | triplet
+  margin: 1.0
+  epochs: 50
+  batch_size: 32
+  lr: 0.001
+  weight_decay: 0.0001
+  patience: 10
+
+evaluation:
+  n_way: 5
+  n_episodes: 200
+
+paths:
+  checkpoint_dir: checkpoints
+  results_dir: results

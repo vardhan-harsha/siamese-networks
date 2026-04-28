@@ -1,3 +1,11 @@
+# Dataset images (download with: python data/download_att.py)
+data/att_faces/
+data/*.zip
+
+# Training outputs
+checkpoints/
+results/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]
